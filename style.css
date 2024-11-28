@@ -1,0 +1,129 @@
+body {
+  background-color: #faf3e0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header.navbar-container {
+  display: flex;
+  width: 100%;
+  padding-block: 0;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 9999;
+  margin-left: 0px;
+  padding-bottom: 60px;
+}
+
+header.navbar-container .logo img {
+  width: 100px;
+}
+header .title {
+  color: #8b4513;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 4rem;
+  display: inline;
+}
+
+header.navbar-container .nav-list ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header .nav-list li {
+  list-style-type: none;
+}
+header .nav-list li a {
+  text-decoration: none;
+  color: #8b4513;
+  font-size: 2rem;
+  border-radius: 999px;
+  padding: 0.5rem 1.5rem;
+}
+
+header .nav-list li a:hover {
+  color: #8b4513;
+  background-color: #d2b48c;
+}
+
+article h2 {
+  font-size: 2rem;
+  color: #6c4408;
+  padding: 0 50px 0 50px;
+}
+
+article p {
+  font-size: 20px;
+  color: #6c4408;
+  text-align: justify;
+  padding: 0 50px 0 50px;
+}
+aside {
+  width: 100%;
+}
+.aside-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin: auto;
+  background-color: white;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.aside-content p {
+  text-align: center;
+  color: #333;
+  font-size: 16px;
+}
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.footer-container {
+  color: #8b4513;
+  padding: 3rem;
+  background-color: #d2b48c;
+}
+
+@media screen and (max-width: 1280px) {
+  header.navbar-container {
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 728px) {
+  header.navbar-container {
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+}
